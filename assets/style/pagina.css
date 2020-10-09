@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Medula One";
+  src: url(https://fonts.gstatic.com/s/medulaone/v7/LoO8LDXpiOs8e6qJRLl2SQzyDMXhdD8sAj6OAJTFsBI.woff2);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(#0e5135, black);
+  background-repeat: no-repeat;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+a:link.link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:visited.link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover.link {
+  color: #0e5135;
+  text-decoration: none;
+}
+
+a:active.selector_name {
+  color: #003300;
+  text-decoration: none;
+}
+
+#navbar {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(#4d3414, #221506);
+  display: flex;
+  align-items: center;
+}
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logoTitulo {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logoTitulo h1 {
+  font-family: "Medula One";
+  color: #e1dfbf;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.logoTitulo a:link {
+  text-decoration: none;
+}
+.navbarItems {
+  color: white;
+  font-family: tahoma;
+}
+.githubNavbar {
+  display: inline;
+  padding: 25px;
+}
+
+.relatorioNavbar {
+  display: inline;
+  padding: 25px;
+}
+
+#pagina {
+  margin: 55px auto auto auto;
+  width: 98%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.colunaDireitaContainer {
+  width: 385px;
+  display: flex;
+  flex-direction: column;
+  min-height: 525px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custoTotalContainer {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  padding-top: 6px;
+  border: 5px solid #714c1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+fieldset {
+  display: block;
+  border: none;
+  color: #fff;
+}
+
+.tituloLegenda {
+  font-size: 18px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #714c1d;
+  font-family: "Medula One";
+}
+
+#footer {
+  background: linear-gradient(#4d3414, #221506);
+  display: flex;
+  height: 86px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Medula One";
+  color: #e1dfbf;
+}

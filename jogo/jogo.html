@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Busca Heurística - TP1 IA</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen, projection"
+      href="../assets/style/jogo.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen, projection"
+      href="../assets/style/buttons.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen, projection"
+      href="../assets/style/pagina.css"
+    />
+  </head>
+  <body>
+    <div id="navbar">
+      <div class="navbarContainer">
+        <div class="logoTitulo">
+          <a href="./../index.html"
+            ><img src="../assets/img/logo.png" width="60px" height="60px" />
+          </a>
+          <a href="./../index.html">
+            <h1>Busca Heurítica A*</h1>
+          </a>
+        </div>
+
+        <div class="navbarItems">
+          <div class="githubNavbar">
+            <a class="link" href="">Github</a>
+          </div>
+          <div class="relatorioNavbar">
+            <a class="link" href="">Relatório</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pagina">
+      <div id="main">
+        <div id="tabela">Carregando mapa...</div>
+      </div>
+      <div class="colunaDireitaContainer">
+        <div class="containerBigButtons">
+          <a class="button jogar" id="mapaPadrao">
+            <div class="button-text">Mapa padrão</div>
+            <div class="left-decoration"></div>
+            <div class="right-decoration"></div>
+          </a>
+          <a class="button jogar" id="mapaAleatorio">
+            <div class="button-text">Mapa aleatório</div>
+            <div class="left-decoration"></div>
+            <div class="right-decoration"></div>
+          </a>
+        </div>
+        <div class="custoTotalContainer">
+          <span id="message" class="custoTotal"></span>
+        </div>
+        <a class="button jogar">
+          <div class="button-text" id="mostrarLegenda">Mostrar legenda</div>
+        </a>
+        <div class="containerOptions">
+          <fieldset id="custosTerrenos">
+            <legend>
+              <div class="tituloLegenda vermelho">Custos dos terrenos</div>
+            </legend>
+            <div>
+              <span
+                class="item weight1"
+                style="width: 14.25px; height: 14.25px; margin-right: 6px"
+                id="keyWeight10"
+              ></span>
+              Grama (10)
+            </div>
+            <div>
+              <span
+                class="item weight2"
+                style="width: 14.25px; height: 14.25px; margin-right: 6px"
+                id="keyWeight20"
+              ></span>
+              Areia (20)
+            </div>
+            <div>
+              <span
+                class="item weight10"
+                style="width: 14.25px; height: 14.25px; margin-right: 6px"
+                id="keyWeight100"
+              ></span>
+              Floresta (100)
+            </div>
+            <div>
+              <span
+                class="item weight15"
+                style="width: 14.25px; height: 14.25px; margin-right: 6px"
+                id="keyWeight150"
+              ></span>
+              Montanha (150)
+            </div>
+            <div>
+              <span
+                class="item weight18"
+                style="width: 14.25px; height: 14.25px; margin-right: 6px"
+                id="keyWeight180"
+              ></span>
+              Água (180)
+            </div>
+          </fieldset>
+          <fieldset id="itemsLeg">
+            <legend>
+              <div class="tituloLegenda verde">Itens</div>
+            </legend>
+            <div>
+              <span
+                class="item pingente coragem"
+                style="width: 14.25px; height: 14.25px; margin-right: 6px"
+                id="pinCoragem"
+              ></span>
+              Pingente coragem
+            </div>
+            <div>
+              <span
+                class="item pingente poder"
+                style="width: 14.25px; height: 14.25px; margin-right: 6px"
+                id="pinPoder"
+              ></span>
+              Pingente poder
+            </div>
+            <div>
+              <span
+                class="item pingente sabedoria"
+                style="width: 14.25px; height: 14.25px; margin-right: 6px"
+                id="pinSabedoria"
+              ></span>
+              Pingent sabedoria
+            </div>
+            <div>
+              <span
+                class="item masterSword legenda"
+                style="width: 14.25px; height: 14.25px; margin-right: 6px"
+                id="masterSword"
+              ></span>
+              Master sword
+            </div>
+            <div>
+              <span
+                class="item agente"
+                style="width: 14.25px; height: 14.25px; margin-right: 6px"
+                id="linkHeroi"
+              ></span>
+              Link
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p>
+        &copy; 2020 PLE. Engenharia de computação - Inteligência Artificial -
+        UFOP
+      </p>
+      <div class="links">
+        <a href="">Github</a> |
+        <a href="">Relatório</a>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="../assets/scripts/jquery-1.7.1.min.js"
+    ></script>
+    <script type="text/javascript" src="../assets/scripts/buscaA.js"></script>
+    <script type="text/javascript" src="../assets/scripts/heap.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/scripts/estruturas.js"
+    ></script>
+    <script type="text/javascript" src="jogo.js"></script>
+    <script type="text/javascript" src="defaultMap.js"></script>
+  </body>
+</html>

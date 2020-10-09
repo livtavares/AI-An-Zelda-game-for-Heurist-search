@@ -1,0 +1,75 @@
+#tabela {
+  width: 870px;
+  height: 870px;
+}
+
+.vazio:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.item {
+  display: block;
+  border: 1px solid #bbb;
+  float: left;
+  line-height: 12px;
+  font-size: 10px;
+}
+
+.item.weight1 {
+  background-color: #92d050;
+}
+.item.weight2 {
+  background-color: #ddd9c3;
+}
+.item.weight10 {
+  background-color: #00b050;
+}
+.item.weight15 {
+  background-color: #948a54;
+}
+.item.weight18 {
+  background-color: #0070c0;
+}
+.item.inicio {
+  background-color: #ff703f;
+  background-image: url("../img/link.svg");
+}
+.item.agente {
+  background-image: url("../img/link.svg");
+}
+.item.inicio.agente {
+  background-image: url("../img/link.svg");
+  background-color: #ff703f;
+}
+.item.ativo {
+  background-color: #ff703f;
+  background-image: url("../img/link.svg");
+}
+.item.pingente {
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 2px 2px 5px 1px #fff inset;
+}
+.item.pingente.coragem {
+  background-color: #d91a2d;
+}
+.item.pingente.poder {
+  background-color: #1b6dc6;
+}
+.item.pingente.sabedoria {
+  background-color: #62ec97;
+}
+.item.masterSword {
+  background-image: url("../img/sword.svg");
+}
+.item.masterSword.legenda {
+  border: none;
+}
+#custosTerrenos,
+#itemsLeg {
+  display: none;
+}
